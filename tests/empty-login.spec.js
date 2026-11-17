@@ -1,7 +1,7 @@
 import { test, expect } from '@playwright/test';
 
 test('пустая форма показывает ошибки email и пароля', async ({ page }) => {
-  await page.goto('/');
+  await page.goto('/https://testboard.avito.com/');
   await page.locator('[data-marker="login-button-desktop"]').click();
   await page.locator('[data-marker="login-submit-button"]').click();
 
